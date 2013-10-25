@@ -82,7 +82,7 @@ CONFIG_CLEAN_FILES =
 CONFIG_CLEAN_VPATH_FILES =
 am__installdirs = "$(DESTDIR)$(bindir)"
 PROGRAMS = $(bin_PROGRAMS)
-am_mea_robot_OBJECTS = record.$(OBJEXT) Recorder.$(OBJEXT) \
+am_mea_robot_OBJECTS = robot.$(OBJEXT) Recorder.$(OBJEXT) \
 	SpikeRecorder.$(OBJEXT) SourceSet.$(OBJEXT) \
 	StreamRec.$(OBJEXT)
 mea_robot_OBJECTS = $(am_mea_robot_OBJECTS)
@@ -229,8 +229,8 @@ target_alias = @target_alias@
 top_build_prefix = @top_build_prefix@
 top_builddir = @top_builddir@
 top_srcdir = @top_srcdir@
-noinst_HEADERS = Descriptions.H Recorder.H SourceSet.H SpikeRecorder.H StreamRec.H 
-mea_robot_SOURCES = record.C Recorder.C SpikeRecorder.C SourceSet.C StreamRec.C
+noinst_HEADERS = Descriptions.H Recorder.H SourceSet.H SpikeRecorder.H StreamRec.H
+mea_robot_SOURCES = robot.C Recorder.C SpikeRecorder.C SourceSet.C StreamRec.C
 INCLUDES = -I$(top_srcdir)
 LDADD = $(top_srcdir)/base/libmea.la
 all: all-am
@@ -324,7 +324,7 @@ distclean-compile:
 @AMDEP_TRUE@@am__include@ @am__quote@./$(DEPDIR)/SourceSet.Po@am__quote@
 @AMDEP_TRUE@@am__include@ @am__quote@./$(DEPDIR)/SpikeRecorder.Po@am__quote@
 @AMDEP_TRUE@@am__include@ @am__quote@./$(DEPDIR)/StreamRec.Po@am__quote@
-@AMDEP_TRUE@@am__include@ @am__quote@./$(DEPDIR)/record.Po@am__quote@
+@AMDEP_TRUE@@am__include@ @am__quote@./$(DEPDIR)/robot.Po@am__quote@
 
 .C.o:
 @am__fastdepCXX_TRUE@	$(CXXCOMPILE) -MT $@ -MD -MP -MF $(DEPDIR)/$*.Tpo -c -o $@ $<
