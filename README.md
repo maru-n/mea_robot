@@ -1,7 +1,7 @@
 mea_robot
 =========
 
-##Installation
+##Installation guide
 
 1. clone on meabench top directory.
 
