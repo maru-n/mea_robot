@@ -30,3 +30,5 @@ mea_robot
 
         $ ./configure
         $ make
+
+##How to use
